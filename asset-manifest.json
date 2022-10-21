@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/dog-adoption-frontend/static/css/main.4e37de35.css",
+    "main.js": "/dog-adoption-frontend/static/js/main.80cac35f.js",
+    "static/media/landingPage.jpg": "/dog-adoption-frontend/static/media/landingPage.8338b7dd26e0c9ba59fd.jpg",
+    "static/media/landing-page-img.jpg": "/dog-adoption-frontend/static/media/landing-page-img.18c2ee93ef312190ed17.jpg",
+    "static/media/dog1-detail.jpg": "/dog-adoption-frontend/static/media/dog1-detail.126054556151c715e8ed.jpg",
+    "static/media/dog2-detail.jpg": "/dog-adoption-frontend/static/media/dog2-detail.040c655ce297fc7d506b.jpg",
+    "static/media/dog5-detail.jpg": "/dog-adoption-frontend/static/media/dog5-detail.de3edd707d7a10ad488b.jpg",
+    "static/media/dog6-detail.jpg": "/dog-adoption-frontend/static/media/dog6-detail.829cea32721bda377eab.jpg",
+    "static/media/dog3-detail.jpg": "/dog-adoption-frontend/static/media/dog3-detail.3903a2a3d89ab89b792b.jpg",
+    "static/media/dog4-detail.jpg": "/dog-adoption-frontend/static/media/dog4-detail.9b84ee09fa6f8983a3cb.jpg",
+    "static/media/dog2.jpg": "/dog-adoption-frontend/static/media/dog2.d167f09139edb28d4815.jpg",
+    "static/media/dog3.jpg": "/dog-adoption-frontend/static/media/dog3.a3997c7e9c304d57fef0.jpg",
+    "static/media/dog1.jpg": "/dog-adoption-frontend/static/media/dog1.861dad5c7bfc129468d2.jpg",
+    "static/media/dog4.jpg": "/dog-adoption-frontend/static/media/dog4.6c2a035c524d6320849a.jpg",
+    "static/media/dog5.jpg": "/dog-adoption-frontend/static/media/dog5.cab0b9704f2d4eb1edd6.jpg",
+    "static/media/dog6.jpg": "/dog-adoption-frontend/static/media/dog6.5980bbb0d7ef660a0a3c.jpg",
+    "index.html": "/dog-adoption-frontend/index.html",
+    "main.4e37de35.css.map": "/dog-adoption-frontend/static/css/main.4e37de35.css.map",
+    "main.80cac35f.js.map": "/dog-adoption-frontend/static/js/main.80cac35f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e37de35.css",
+    "static/js/main.80cac35f.js"
+  ]
+}

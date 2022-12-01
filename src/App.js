@@ -12,6 +12,7 @@ import Retriever from './components/retriever';
 import Bulldog from './components/bulldog';
 import Corgi from './components/corgi';
 import Samoyed from './components/samoyed';
+import ComingSoon from './components/comingSoon';
 
 function App() {
   const [singledog, setSingledog] = useState({});
@@ -31,6 +32,7 @@ function App() {
         <Navbar />
         <Routes >
           <Route exact path= "/Dog-Adoption-App" element= { <Homepage />}/>
+          <Route exact path='/comingsoon' element= { <ComingSoon />}/>
           <Route exact path= "/singledog" element= { <Singledog singledog={singledog}/>}/>
           <Route exact path= "/alldogs" element= { <Alldogs setSingleDogPage={setSingleDogPage}/>}/>
           <Route exact path= "/retrievers" element= { <Retriever setSingleDogPage={setSingleDogPage}/>}/>

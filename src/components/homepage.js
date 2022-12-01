@@ -17,7 +17,7 @@ const Homepage = (props) => {
               </span>
             </h1>
             <h1>will you take me</h1>
-            <button>Subscribe Now</button>
+            <button><a href="/comingsoon">Subscribe Now</a></button>
           </div>
           <div className="banner-right-side">
             <img alt="Dog" src={require('../images/landing-page-img.jpg')} />

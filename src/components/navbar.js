@@ -18,7 +18,7 @@ const Navbar = () => {
       <ul className="menu">
         <li className="logo-wrapper">
           <a className="logo">
-            <NavLink to= "/">
+            <NavLink to= "/Dog-Adoption-App">
               <img alt="logo" src={require('../images/dog-logo.jpg')}></img>
             </NavLink>
           </a>

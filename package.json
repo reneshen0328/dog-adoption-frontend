@@ -1,7 +1,7 @@
 {
   "name": "dog-adoption-frontend",
   "version": "0.1.0",
-  "homepage": "https://reneshen0328.github.io/dog-adoption-frontend",
+  "homepage": "https://reneshen0328.github.io/Dog-Adoption-App",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",

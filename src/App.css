@@ -434,3 +434,66 @@ span.font-luckiest-guy {
   }
 }
 
+/* Coming Soon Page */
+
+#coming-soon-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#coming-soon-header {
+  font-family: Luckiest Guy;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+      color: #013220;
+      color: #964B00;
+      font-size: 11vh;
+}
+
+#coming-soon-subtext {
+  color: #013220;
+  font-size: 3vh;
+}
+
+#coming-soon-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+  height: 20vh;
+}
+
+#coming-soon-input {
+  width: 80%;
+  height: 8vh;
+  border-radius: 5px;
+  color: gray;
+  font-size: larger;
+    font-family: Luckiest Guy;
+      font-weight: 400;
+  letter-spacing: 1px;
+  
+}
+
+#coming-soon-button {
+  width: 20%;
+  height: 8vh;
+  border-width: 3px;
+  margin: 2%;
+  border-radius: 5px;
+  font-size: medium;
+  color: #013220;
+  font-family: Luckiest Guy;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+#coming-soon-underline {
+  display: flex;
+  justify-content: center;
+  width: 30vw;
+  margin: 1%;
+}

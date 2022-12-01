@@ -1,4 +1,5 @@
 /* eslint-disable require-jsdoc */
+/* eslint-disable*/
 /* eslint-disable max-len */
 import React, { useState } from 'react'
 import './App.css'

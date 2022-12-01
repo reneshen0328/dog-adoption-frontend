@@ -13,7 +13,7 @@ import Retriever from './components/retriever'
 import Bulldog from './components/bulldog'
 import Corgi from './components/corgi'
 import Samoyed from './components/samoyed'
-import ComingSoon from './components/comingSoon'
+import Comingsoon from './components/comingsoon'
 
 function App() {
   const [singledog, setSingledog] = useState({})
@@ -54,7 +54,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path="/dog-adoption-frontend" element={<Homepage />} />
-          <Route exact path="/comingsoon" element={<ComingSoon />} />
+          <Route exact path="/comingsoon" element={<Comingsoon />} />
           <Route
             exact
             path="/singledog"

@@ -92,35 +92,55 @@ margin-left: 33px;
 
 /* MODAL */
 .modal {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #666;
+  width: 300px;
+  height: fit-content;
+  border-radius: 0.5em;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.modal-overlay {
   position: fixed;
-  left: 0;
   top: 0;
-  right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 200ms;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
 
 .modal-content {
-  width: 500px;
-  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
 }
 
 .modal-header {
-  padding: 10px;
+  padding: 10px 0;
 }
 
-.modal-body {
-  padding: 10px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-button {
+  width: 95px;
+  height: 43px;
 }
 
 .modal-close {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
+  cursor: pointer;
 }
 
 /* NAVBAR */
@@ -514,11 +534,8 @@ span.font-luckiest-guy {
 
 #coming-soon-header {
   font-family: Luckiest Guy;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-      color: #013220;
-      color: #964B00;
-      font-size: 11vh;
+  letter-spacing: 1.5px;
+  color: #964B00;
 }
 
 #coming-soon-subtext {
@@ -530,13 +547,13 @@ span.font-luckiest-guy {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30vw;
+  width: auto;
   height: 20vh;
 }
 
 #coming-soon-input {
   width: 80%;
-  height: 55px;
+  height: 45px;
   border-radius: 5px;
   font-size: 28px;
   font-family: Luckiest Guy;
@@ -550,15 +567,16 @@ span.font-luckiest-guy {
 }
 
 #coming-soon-button {
-  width: 20%;
-  height: 60px;
+  width: fit-content;
+  height: 50px;
   border-width: 3px;
   margin: 2%;
   border-radius: 5px;
-  font-size: medium;
+  font-size: 22px;
   color: #013220;
   font-family: Luckiest Guy;
   font-weight: 400;
+  text-align: center;
   letter-spacing: 1px;
   cursor: pointer;
 }
@@ -567,5 +585,4 @@ span.font-luckiest-guy {
   display: flex;
   justify-content: center;
   width: 30vw;
-  margin: 1%;
 }

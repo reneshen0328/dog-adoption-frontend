@@ -7,18 +7,24 @@ const Modal = (props) => {
   }
 
   return (
-    <div className='modal'>
-      <div className='modal-content'>
-        <div className='modal-close'>
-          <h2 onClick={props.onClose} >X</h2>
+    <div className='modal-overlay'>
+      <div className='modal'>
+        <div className='modal-content'>
+          <div className='modal-close'>
+            <h2 onClick={props.onClose} >X</h2>
+          </div>
+          <div className='modal-header'>
+            <h3 className='modal-title'>Subscribe</h3>
+          </div>
+          <p className='modal-body'>
+              You are allowing us to access to your email address you provided
+              by clicking the acknowlege botton below.
+          </p>
+          <div className='modal-footer'>
+            <button className='modal-button'
+              onClick={props.onClose} >Got it!</button>
+          </div>
         </div>
-        <div className='modal-header'>
-          <h4 className='modal-title'>Modal title</h4>
-        </div>
-        <div className='modal-body'>
-              This is a modal
-        </div>
-        <div className='modal-footer'></div>
       </div>
     </div>
   );

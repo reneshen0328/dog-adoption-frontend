@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable max-len */
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 
 const Alldog = (props) => {
   return (
@@ -12,7 +12,11 @@ const Alldog = (props) => {
         <path stroke="#004A44" strokeWidth={10} d="M5 0 2000 0" />
       </svg>
       <h2>Want To Know The Newest Updates On Your Favorite Dog?</h2>
-      <button>Subscribe Now</button>
+      <button>
+        <a>
+          <NavLink to="/comingsoon">Subscribe Now</NavLink>
+        </a>
+      </button>
 
       <div className="dog-preview-list">
         <div className="dog-preview-list-item corgi">

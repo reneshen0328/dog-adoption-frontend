@@ -17,7 +17,7 @@ const Retriever = (props) => {
       <h2>Want To Know The Newest Updates On Your Favorite Dog?</h2>
       <button>
         <a>
-          <NavLink to="/comingsoon">Subscribe Now</NavLink>
+          <NavLink to="/comingsoon" className="primaryBtn">Subscribe</NavLink>
         </a>
       </button>
 
@@ -26,7 +26,7 @@ const Retriever = (props) => {
           <img alt= "Champ the lab-retriever" src={require('../images/dog2.jpg')}/>
           <div className="dog-preview-description-wrapper">
             <Link to="/singledog">
-              <h3 onClick= {
+              <h3 className='secondaryBtn' onClick= {
                 ()=>props.setSingleDogPage('dog2-detail.jpg', 'Champ', '5 Months',
                     'My name is Champ. I\'m super smart, and my caretakers often trusted me with kids. I \'m very patience and will be a great family member of yours.',
                     'Lab Retriever', 'Good family pet')}>Champ </h3>
@@ -45,7 +45,7 @@ const Retriever = (props) => {
           <img alt= "Butters the golden retriever" src={require('../images/dog5.jpg')}/>
           <div className="dog-preview-description-wrapper">
             <Link to="/singledog">
-              <h3 onClick= {
+              <h3 className='secondaryBtn' onClick= {
                 ()=>props.setSingleDogPage('dog5-detail.jpg', 'Butters', '4 Months',
                     'My name is Butters, and I love playing with kids. My caretakers said I\'m the most even-tempered, intelligent and affectionate dog here.',
                     'Golden Retriever', 'Loyal companion')}>Butters </h3>

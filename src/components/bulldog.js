@@ -17,7 +17,7 @@ const Bulldog = (props) => {
       <h2>Want To Know The Newest Updates On Your Favorite Dog?</h2>
       <button>
         <a>
-          <NavLink to="/comingsoon">Subscribe Now</NavLink>
+          <NavLink to="/comingsoon" className="primaryBtn">Subscribe</NavLink>
         </a>
       </button>
 
@@ -26,7 +26,7 @@ const Bulldog = (props) => {
           <img alt= "Drake the bulldog" src={require('../images/dog3.jpg')}/>
           <div className="dog-preview-description-wrapper">
             <Link to="/singledog">
-              <h3 onClick= {
+              <h3 className='secondaryBtn' onClick= {
                 ()=>props.setSingleDogPage('dog3-detail.jpg', 'Drake', '1 Year',
                     'My name is Drake, and I love kids. I love to move around, and I\'m great with tricks! I might look ferocious, but I\'m super friendly.',
                     'Bulldog', 'Loyal companion')}>Drake

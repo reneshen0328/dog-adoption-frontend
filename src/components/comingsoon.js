@@ -2,8 +2,16 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable max-len */
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const ComingSoon = () => {
+  const nevigate = useNavigate()
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    nevigate('/dog-adoption-frontend')
+  }
+
   return (
     <div id="coming-soon-container">
       <h1 id="coming-soon-header">Coming Soon</h1>
@@ -13,8 +21,9 @@ const ComingSoon = () => {
       <h3 id="coming-soon-subtext">
         From lonely to loved. Help the dogs in need anywhere at anytime.
       </h3>
-      <form id="coming-soon-form">
+      <form onSubmit={handleSubmit} id="coming-soon-form">
         <input
+          required
           type="text"
           name="name"
           placeholder="Enter your email"

@@ -17,7 +17,7 @@ const Corgi = (props) => {
       <h2>Want To Know The Newest Updates On Your Favorite Dog?</h2>
       <button>
         <a>
-          <NavLink to="/comingsoon">Subscribe Now</NavLink>
+          <NavLink to="/comingsoon" className="primaryBtn">Subscribe</NavLink>
         </a>
       </button>
 
@@ -26,7 +26,7 @@ const Corgi = (props) => {
           <img alt= "Chick Pea the corgi" src={require('../images/dog4.jpg')}/>
           <div className="dog-preview-description-wrapper">
             <Link to="/singledog">
-              <h3 onClick= {
+              <h3 className='secondaryBtn' onClick= {
                 ()=>props.setSingleDogPage('dog4-detail.jpg', 'Chick Pea', '2 Years',
                     'My name is Chick Pea, and I love kids. Look at my short little legs and my tiny little tail. Aren\'t I adorable? Are you ready to take me home today?',
                     'Corgi', 'Courageous')}>Chick Pea </h3>
@@ -45,7 +45,7 @@ const Corgi = (props) => {
           <img alt= "Hunter the corgi" src={require('../images/dog1.jpg')}/>
           <div className="dog-preview-description-wrapper">
             <Link to="/singledog">
-              <h3 onClick= {
+              <h3 className='secondaryBtn' onClick= {
                 ()=>props.setSingleDogPage('dog1-detail.jpg', 'Hunter', '3 Months',
                     'My name is Hunter, and I\'m always happy. I\'m also super smart, fun-loving, loyal, and very rarely a little stubborn. I run very fast, that\'s why my name is Hunter!',
                     'Corgi', 'Good Guard Dog')}>Hunter </h3>

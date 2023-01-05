@@ -16,7 +16,7 @@ const Homepage = (props) => {
             <h1>will you take me</h1>
             <button>
               <a>
-                <NavLink to="/comingsoon">Subscribe Now</NavLink>
+                <NavLink to="/comingsoon" className="primaryBtn">Subscribe</NavLink>
               </a>
             </button>
           </div>
@@ -36,7 +36,7 @@ const Homepage = (props) => {
             <img alt="Hunter the corgi" src={require('../images/dog1.jpg')} />
             <div className="dog-preview-description-wrapper">
               <Link to="/singledog">
-                <h3
+                <h3 className='secondaryBtn'
                   onClick={() =>
                     props.setSingleDogPage(
                       '../images/dog1.jpg',
@@ -69,7 +69,7 @@ const Homepage = (props) => {
             />
             <div className="dog-preview-description-wrapper">
               <Link to="/singledog">
-                <h3
+                <h3 className='secondaryBtn'
                   onClick={() =>
                     props.setSingleDogPage(
                       '../images/dog2.jpg',
@@ -99,7 +99,7 @@ const Homepage = (props) => {
             <img alt="Drake the bulldog" src={require('../images/dog3.jpg')} />
             <div className="dog-preview-description-wrapper">
               <Link to="/singledog">
-                <h3
+                <h3 className='secondaryBtn'
                   onClick={() =>
                     props.setSingleDogPage(
                       '../images/dog3.jpg',

@@ -14,7 +14,7 @@ const Alldog = (props) => {
       <h2>Want To Know The Newest Updates On Your Favorite Dog?</h2>
       <button>
         <a>
-          <NavLink to="/comingsoon">Subscribe Now</NavLink>
+          <NavLink to="/comingsoon" className="primaryBtn">Subscribe</NavLink>
         </a>
       </button>
 
@@ -23,7 +23,7 @@ const Alldog = (props) => {
           <img alt= "Hunter the corgi" src={require('../images/dog1.jpg')}/>
           <div className="dog-preview-description-wrapper">
             <Link to="/singledog">
-              <h3 onClick= {
+              <h3 className='secondaryBtn' onClick= {
                 ()=>props.setSingleDogPage('dog1-detail.jpg', 'Hunter', '3 Months',
                     'My name is Hunter, and I\'m always happy. I\'m also super smart, fun-loving, loyal, and very rarely a little stubborn. I run very fast, that\'s why my name is Hunter!',
                     'Corgi', 'Good Guard Dog')}>Hunter </h3>
@@ -42,7 +42,7 @@ const Alldog = (props) => {
           <img alt= "Champ the lab-retriever" src={require('../images/dog2.jpg')}/>
           <div className="dog-preview-description-wrapper">
             <Link to="/singledog">
-              <h3 onClick= {
+              <h3 className='secondaryBtn' onClick= {
                 ()=>props.setSingleDogPage('dog2-detail.jpg', 'Champ', '5 Months',
                     'My name is Champ. I\'m super smart, and my caretakers often trusted me with kids. I \'m very patience and will be a great family member of yours.',
                     'Lab Retriever', 'Good family pet')}>Champ </h3>
@@ -61,7 +61,7 @@ const Alldog = (props) => {
           <img alt= "Drake the bulldog" src={require('../images/dog3.jpg')}/>
           <div className="dog-preview-description-wrapper">
             <Link to="/singledog">
-              <h3 onClick= {
+              <h3 className='secondaryBtn' onClick= {
                 ()=>props.setSingleDogPage('dog3-detail.jpg', 'Drake', '1 Year',
                     'My name is Drake, and I love kids. I love to move around, and I\'m great with tricks! I might look ferocious, but I\'m super friendly.',
                     'Bulldog', 'Loyal companion')}>Drake </h3>
@@ -80,7 +80,7 @@ const Alldog = (props) => {
           <img alt= "Chick Pea the corgi" src={require('../images/dog4.jpg')}/>
           <div className="dog-preview-description-wrapper">
             <Link to="/singledog">
-              <h3 onClick= {
+              <h3 className='secondaryBtn' onClick= {
                 ()=>props.setSingleDogPage('dog4-detail.jpg', 'Chick Pea', '2 Years',
                     'My name is Chick Pea, and I love kids. Look at my short little legs and my tiny little tail. Aren\'t I adorable? Are you ready to take me home today?',
                     'Corgi', 'Courageous')}>Chick Pea </h3>
@@ -99,7 +99,7 @@ const Alldog = (props) => {
           <img alt= "Butters the golden retriever" src={require('../images/dog5.jpg')}/>
           <div className="dog-preview-description-wrapper">
             <Link to="/singledog">
-              <h3 onClick= {
+              <h3 className='secondaryBtn' onClick= {
                 ()=>props.setSingleDogPage('dog5-detail.jpg', 'Butters', '4 Months',
                     'My name is Butters, and I love playing with kids. My caretakers said I\'m the most even-tempered, intelligent and affectionate dog here.',
                     'Golden Retriever', 'Loyal companion')}>Butters </h3>
@@ -118,7 +118,7 @@ const Alldog = (props) => {
           <img alt= "Lilo the samoyed" src={require('../images/dog6.jpg')}/>
           <div className="dog-preview-description-wrapper">
             <Link to="/singledog">
-              <h3 onClick= {
+              <h3 className='secondaryBtn' onClick= {
                 ()=>props.setSingleDogPage('dog6-detail.jpg', 'Lilo', '7 Years',
                     'My name is Lilo, and I love attention. I\'m super smart, and I\'m never tired. I\'m also super fluffy! I\'ll be your best cuddling company.',
                     'Samoyed', 'Good guard dog')}>Lilo </h3>

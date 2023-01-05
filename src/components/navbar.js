@@ -61,7 +61,7 @@ const Navbar = () => {
       <ul className="dropdown">
         <li className="search-icon">
           <a>
-            <NavLink to="">
+            <NavLink to="/comingsoon">
               <img
                 alt="search-icon"
                 src={require('../images/MagnifyingGlass.jpg')}

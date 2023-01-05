@@ -43,6 +43,41 @@ button {
   cursor: pointer;
 }
 
+.primaryBtn {
+  color: #DFDEE2;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+a .primaryBtn {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+a .primaryBtn:after {
+  content: '\00bb';
+  font-size: large;
+  position: absolute;
+  opacity: 0;
+  top: -3px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+a:hover .primaryBtn {
+  padding-right: 25px;
+}
+
+a:hover .primaryBtn:after {
+  opacity: 1;
+  right: 0;
+}
+
+.secondaryBtn {
+  text-decoration: underline;
+}
+
 .navlink a{
 font-size: 16px;
 color: #013220;
@@ -468,19 +503,22 @@ span.font-luckiest-guy {
 
 #coming-soon-input {
   width: 80%;
-  height: 8vh;
+  height: 55px;
   border-radius: 5px;
-  color: gray;
-  font-size: larger;
-    font-family: Luckiest Guy;
-      font-weight: 400;
+  font-size: 28px;
+  font-family: Luckiest Guy;
+  font-weight: 400;
   letter-spacing: 1px;
-  
+  padding-left: 10px;
+}
+
+::placeholder {
+  color: #DCDCDC;
 }
 
 #coming-soon-button {
   width: 20%;
-  height: 8vh;
+  height: 60px;
   border-width: 3px;
   margin: 2%;
   border-radius: 5px;
@@ -489,6 +527,7 @@ span.font-luckiest-guy {
   font-family: Luckiest Guy;
   font-weight: 400;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 #coming-soon-underline {

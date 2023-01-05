@@ -17,7 +17,7 @@ const Samoyed = (props) => {
       <h2>Want To Know The Newest Updates On Your Favorite Dog?</h2>
       <button>
         <a>
-          <NavLink to="/comingsoon">Subscribe Now</NavLink>
+          <NavLink to="/comingsoon" className="primaryBtn">Subscribe</NavLink>
         </a>
       </button>
 
@@ -26,7 +26,7 @@ const Samoyed = (props) => {
           <img alt= "Lilo the samoyed" src={require('../images/dog6.jpg')}/>
           <div className="dog-preview-description-wrapper">
             <Link to="/singledog">
-              <h3 onClick= {
+              <h3 className='secondaryBtn' onClick= {
                 ()=>props.setSingleDogPage('dog6-detail.jpg', 'Lilo', '7 Years',
                     'My name is Lilo, and I love attention. I\'m super smart, and I\'m never tired. I\'m also super fluffy! I\'ll be your best cuddling company.',
                     'Samoyed', 'Good guard dog')}>Lilo </h3>

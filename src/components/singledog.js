@@ -11,7 +11,11 @@ const singledog = (props) => {
         <path stroke="#004A44" strokeWidth={10} d="M5 0 2000 0" />
       </svg>
       <h2>Want To Know The Newest Updates On Your Favorite Dog?</h2>
-      <button>Subscribe Now</button>
+      <button>
+        <a>
+          <NavLink to="/comingsoon" className="primaryBtn">Subscribe</NavLink>
+        </a>
+      </button>
 
       <div className="single-dog-detail-wrapper">
         <div className="single-dog-detail-bg">

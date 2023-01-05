@@ -17,7 +17,7 @@ const ComingSoon = () => {
         <input
           type="text"
           name="name"
-          defaultValue="Enter your email"
+          placeholder="Enter your email"
           id="coming-soon-input"
         />
         <input type="submit" value="Submit" id="coming-soon-button" />

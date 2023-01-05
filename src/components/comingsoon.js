@@ -1,20 +1,27 @@
 /* eslint-disable*/
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable max-len */
-import React from 'react'
+import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom';
+import Modal from './modal';
 
 const ComingSoon = () => {
-  const nevigate = useNavigate()
+  // const nevigate = useNavigate()
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleModal = () => {
+    isOpen ? setIsOpen(false) : setIsOpen(true);
+  }
 
   const handleSubmit = event => {
     event.preventDefault();
-    nevigate('/dog-adoption-frontend')
+    // nevigate('/dog-adoption-frontend')
+    toggleModal();
   }
 
   return (
     <div id="coming-soon-container">
-      <h1 id="coming-soon-header">Coming Soon</h1>
+      <h1 id="coming-soon-header">Subscribe Now</h1>
       <svg height="10" width="220" id="coming-soon-underline">
         <path stroke="#004A44" strokeWidth={10} d="M5 0 2000 0" />
       </svg>
@@ -30,6 +37,7 @@ const ComingSoon = () => {
           id="coming-soon-input"
         />
         <input type="submit" value="Submit" id="coming-soon-button" />
+        <Modal show={isOpen} onClose={toggleModal}/>
       </form>
     </div>
   )

@@ -1,29 +1,30 @@
 /* eslint-disable require-jsdoc */
-/* eslint-disable*/
-/* eslint-disable max-len */
-import React, { useState } from 'react'
-import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { Helmet } from 'react-helmet'
-import Navbar from './components/navbar'
-import Homepage from './components/homepage'
-import Singledog from './components/singledog'
-import Alldogs from './components/alldogs'
-import Retriever from './components/retriever'
-import Bulldog from './components/bulldog'
-import Corgi from './components/corgi'
-import Samoyed from './components/samoyed'
-import Comingsoon from './components/comingsoon'
+import React, {useState} from 'react';
+import './App.css';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {Helmet} from 'react-helmet';
+import Navbar from './components/navbar';
+import Homepage from './components/homepage';
+import Singledog from './components/singledog';
+import Alldogs from './components/alldogs';
+import Retriever from './components/retriever';
+import Bulldog from './components/bulldog';
+import Corgi from './components/corgi';
+import Samoyed from './components/samoyed';
+import Comingsoon from './components/comingsoon';
+import {withAuth0} from '@auth0/auth0-react';
+import ProtectedRoute from './auth0/ProtectedRoute.js';
+import AdoptNow from './components/adoptnow';
 
 function App() {
-  const [singledog, setSingledog] = useState({})
+  const [singledog, setSingledog] = useState({});
   const setSingleDogPage = (
-    image,
-    name,
-    age,
-    description,
-    breed,
-    characteristics
+      image,
+      name,
+      age,
+      description,
+      breed,
+      characteristics,
   ) => {
     setSingledog({
       image: image,
@@ -31,9 +32,9 @@ function App() {
       age: age,
       description: description,
       breed: breed,
-      characteristics: characteristics
-    })
-  }
+      characteristics: characteristics,
+    });
+  };
 
   return (
     <div className="App">
@@ -52,47 +53,48 @@ function App() {
       </Helmet>
       <Router>
         <Navbar />
-        <Routes>
+        <Switch>
           <Route
             exact
             path="/dog-adoption-frontend"
-            element={<Homepage setSingleDogPage={setSingleDogPage} />}
+            component={() => <Homepage setSingleDogPage={setSingleDogPage} />}
           />
-          <Route exact path="/comingsoon" element={<Comingsoon />} />
+          <Route exact path="/comingsoon" component={Comingsoon} />
           <Route
             exact
             path="/singledog"
-            element={<Singledog singledog={singledog} />}
+            component={() => <Singledog singledog={singledog} />}
           />
+          <ProtectedRoute exact path="/adoptnow" component={AdoptNow} />
           <Route
             exact
             path="/alldogs"
-            element={<Alldogs setSingleDogPage={setSingleDogPage} />}
+            component={() => <Alldogs setSingleDogPage={setSingleDogPage} />}
           />
           <Route
             exact
             path="/retrievers"
-            element={<Retriever setSingleDogPage={setSingleDogPage} />}
+            component={() => <Retriever setSingleDogPage={setSingleDogPage} />}
           />
           <Route
             exact
             path="/bulldogs"
-            element={<Bulldog setSingleDogPage={setSingleDogPage} />}
+            component={() => <Bulldog setSingleDogPage={setSingleDogPage} />}
           />
           <Route
             exact
             path="/corgis"
-            element={<Corgi setSingleDogPage={setSingleDogPage} />}
+            component={() => <Corgi setSingleDogPage={setSingleDogPage} />}
           />
           <Route
             exact
             path="/samoyeds"
-            element={<Samoyed setSingleDogPage={setSingleDogPage} />}
+            component={() => <Samoyed setSingleDogPage={setSingleDogPage} />}
           />
-        </Routes>
+        </Switch>
       </Router>
     </div>
-  )
+  );
 }
 
-export default App
+export default withAuth0(App);

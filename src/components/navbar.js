@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 /* eslint-disable*/
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import React, { useState } from 'react'
 
 const Navbar = () => {
@@ -19,9 +19,9 @@ const Navbar = () => {
       <ul className="menu">
         <li className="logo-wrapper">
           <a className="logo">
-            <NavLink to="/dog-adoption-frontend">
+            <Link to="/dog-adoption-frontend">
               <img alt="logo" src={require('../images/dog-logo.jpg')}></img>
-            </NavLink>
+            </Link>
           </a>
         </li>
         <li className="hamburger">
@@ -61,37 +61,37 @@ const Navbar = () => {
       <ul className="dropdown">
         <li className="search-icon">
           <a>
-            <NavLink to="/comingsoon">
+            <Link to="/comingsoon">
               <img
                 alt="search-icon"
                 src={require('../images/MagnifyingGlass.jpg')}
               ></img>
-            </NavLink>
+            </Link>
           </a>
         </li>
         <li className="nav-link">
           <a>
-            <NavLink to="/alldogs">All dogs</NavLink>
+            <Link to="/alldogs">All dogs</Link>
           </a>
         </li>
         <li className="nav-link">
           <a>
-            <NavLink to="/retrievers">Retriever</NavLink>
+            <Link to="/retrievers">Retriever</Link>
           </a>
         </li>
         <li className="nav-link">
           <a>
-            <NavLink to="/bulldogs">Bulldog</NavLink>
+            <Link to="/bulldogs">Bulldog</Link>
           </a>
         </li>
         <li className="nav-link">
           <a>
-            <NavLink to="/corgis">Corgi</NavLink>
+            <Link to="/corgis">Corgi</Link>
           </a>
         </li>
         <li className="nav-link">
           <a>
-            <NavLink to="/samoyeds">Samoyed</NavLink>
+            <Link to="/samoyeds">Samoyed</Link>
           </a>
         </li>
       </ul>

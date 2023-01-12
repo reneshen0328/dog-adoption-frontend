@@ -53,7 +53,11 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path="/dog-adoption-frontend" element={<Homepage />} />
+          <Route
+            exact
+            path="/dog-adoption-frontend"
+            element={<Homepage setSingleDogPage={setSingleDogPage} />}
+          />
           <Route exact path="/comingsoon" element={<Comingsoon />} />
           <Route
             exact

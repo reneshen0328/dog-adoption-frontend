@@ -16,7 +16,9 @@ const Homepage = (props) => {
             <h1>will you take me</h1>
             <button>
               <a>
-                <NavLink to="/comingsoon" className="primaryBtn">Subscribe</NavLink>
+                <NavLink to="/comingsoon" className="primaryBtn">
+                  Subscribe
+                </NavLink>
               </a>
             </button>
           </div>
@@ -36,14 +38,16 @@ const Homepage = (props) => {
             <img alt="Hunter the corgi" src={require('../images/dog1.jpg')} />
             <div className="dog-preview-description-wrapper">
               <Link to="/singledog">
-                <h3 className='secondaryBtn'
+                <h3
+                  className="secondaryBtn"
                   onClick={() =>
                     props.setSingleDogPage(
-                      '../images/dog1.jpg',
+                      'dog1.jpg',
                       'Hunter',
                       '3 Months',
                       "My name is Hunter, and I'm always happy. I'm also super smart, fun-loving, loyal, and very rarely a little stubborn. I run very fast, that's why my name is Hunter!",
-                      'Corgi'
+                      'Corgi',
+                      'Good Guard Dog'
                     )
                   }
                 >
@@ -69,14 +73,16 @@ const Homepage = (props) => {
             />
             <div className="dog-preview-description-wrapper">
               <Link to="/singledog">
-                <h3 className='secondaryBtn'
+                <h3
+                  className="secondaryBtn"
                   onClick={() =>
                     props.setSingleDogPage(
-                      '../images/dog2.jpg',
+                      'dog2.jpg',
                       'Champ',
                       '5 Months',
                       "My name is Champ. I'm super smart, and my caretakers often trusted me with kids. I 'm very patience and will be a great family member of yours.",
-                      'Lab Retriever'
+                      'Lab Retriever',
+                      'Good family pet'
                     )
                   }
                 >
@@ -99,14 +105,16 @@ const Homepage = (props) => {
             <img alt="Drake the bulldog" src={require('../images/dog3.jpg')} />
             <div className="dog-preview-description-wrapper">
               <Link to="/singledog">
-                <h3 className='secondaryBtn'
+                <h3
+                  className="secondaryBtn"
                   onClick={() =>
                     props.setSingleDogPage(
-                      '../images/dog3.jpg',
+                      'dog3.jpg',
                       'Drake',
                       '1 Year',
                       '',
-                      'Bulldog'
+                      'Bulldog',
+                      'Loyal companion'
                     )
                   }
                 >

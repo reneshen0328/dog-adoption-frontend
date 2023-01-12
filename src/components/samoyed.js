@@ -1,9 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/jsx-no-undef */
 /* eslint-disable max-len */
-/* eslint-disable react/react-in-jsx-scope */
-
+/* eslint-disable react/prop-types */
 import React from 'react';
 import {Link, NavLink} from 'react-router-dom';
 

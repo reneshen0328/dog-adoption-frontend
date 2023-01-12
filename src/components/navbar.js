@@ -1,18 +1,16 @@
-/* eslint-disable max-len */
-/* eslint-disable*/
-import { Link } from 'react-router-dom'
-import React, { useState } from 'react'
+import {Link} from 'react-router-dom';
+import React, {useState} from 'react';
 
 const Navbar = () => {
-  const [hamburgerState, setHamburgerState] = useState(false)
+  const [hamburgerState, setHamburgerState] = useState(false);
 
-  const openHamburger = function () {
+  const openHamburger = function() {
     if (hamburgerState === false) {
-      setHamburgerState(true)
+      setHamburgerState(true);
     } else {
-      setHamburgerState(false)
+      setHamburgerState(false);
     }
-  }
+  };
 
   return (
     <nav className="navbar-wrapper">
@@ -96,7 +94,7 @@ const Navbar = () => {
         </li>
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

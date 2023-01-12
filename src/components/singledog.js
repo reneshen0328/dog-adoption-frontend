@@ -1,11 +1,7 @@
-/* eslint-disable max-len */
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-// import {useAuth0} from '@auth0/auth0-react';
 
 const singledog = (props) => {
-  // const {loginWithRedirect} = useAuth0();
-
   return (
     <div className="category-wrapper">
       <span className="font-luckiest-guy">
@@ -38,12 +34,7 @@ const singledog = (props) => {
             </p>
             <div>
               <a href='/adoptnow'>
-                <button
-                  className="adopt-btn"
-                  onClick={() => {
-                    // loginWithRedirect();
-                  }}
-                >
+                <button>
                   Adopt Now
                 </button>
               </a>

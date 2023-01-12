@@ -1,7 +1,8 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/prop-types */
 /* eslint-disable max-len */
-/* eslint-disable*/
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import React from 'react';
+import {Link, NavLink} from 'react-router-dom';
 
 const Homepage = (props) => {
   return (
@@ -42,12 +43,12 @@ const Homepage = (props) => {
                   className="secondaryBtn"
                   onClick={() =>
                     props.setSingleDogPage(
-                      'dog1.jpg',
-                      'Hunter',
-                      '3 Months',
-                      "My name is Hunter, and I'm always happy. I'm also super smart, fun-loving, loyal, and very rarely a little stubborn. I run very fast, that's why my name is Hunter!",
-                      'Corgi',
-                      'Good Guard Dog'
+                        'dog1.jpg',
+                        'Hunter',
+                        '3 Months',
+                        'My name is Hunter, and I\'m always happy. I\'m also super smart, fun-loving, loyal, and very rarely a little stubborn. I run very fast, that\'s why my name is Hunter!',
+                        'Corgi',
+                        'Good Guard Dog',
                     )
                   }
                 >
@@ -77,12 +78,12 @@ const Homepage = (props) => {
                   className="secondaryBtn"
                   onClick={() =>
                     props.setSingleDogPage(
-                      'dog2.jpg',
-                      'Champ',
-                      '5 Months',
-                      "My name is Champ. I'm super smart, and my caretakers often trusted me with kids. I 'm very patience and will be a great family member of yours.",
-                      'Lab Retriever',
-                      'Good family pet'
+                        'dog2.jpg',
+                        'Champ',
+                        '5 Months',
+                        'My name is Champ. I\'m super smart, and my caretakers often trusted me with kids. I \'m very patience and will be a great family member of yours.',
+                        'Lab Retriever',
+                        'Good family pet',
                     )
                   }
                 >
@@ -109,12 +110,12 @@ const Homepage = (props) => {
                   className="secondaryBtn"
                   onClick={() =>
                     props.setSingleDogPage(
-                      'dog3.jpg',
-                      'Drake',
-                      '1 Year',
-                      '',
-                      'Bulldog',
-                      'Loyal companion'
+                        'dog3.jpg',
+                        'Drake',
+                        '1 Year',
+                        '',
+                        'Bulldog',
+                        'Loyal companion',
                     )
                   }
                 >
@@ -135,7 +136,7 @@ const Homepage = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Homepage
+export default Homepage;

@@ -1,23 +1,17 @@
-/* eslint-disable*/
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable max-len */
-import React, {useState} from 'react'
-import { useNavigate } from 'react-router-dom';
+import React, {useState} from 'react';
 import Modal from './modal';
 
 const ComingSoon = () => {
-  // const nevigate = useNavigate()
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleModal = () => {
     isOpen ? setIsOpen(false) : setIsOpen(true);
-  }
+  };
 
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     event.preventDefault();
-    // nevigate('/dog-adoption-frontend')
     toggleModal();
-  }
+  };
 
   return (
     <div id="coming-soon-container">
@@ -40,7 +34,7 @@ const ComingSoon = () => {
         <Modal show={isOpen} onClose={toggleModal}/>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default ComingSoon
+export default ComingSoon;

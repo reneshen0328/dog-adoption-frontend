@@ -7,7 +7,7 @@ const AdoptNow = () => {
     <button
       onClick={() =>
         logout({
-          returnTo: 'http://localhost:3000/dog-adoption-frontend',
+          returnTo: 'https://reneshen0328.github.io/dog-adoption-frontend',
         })
       }
     >
